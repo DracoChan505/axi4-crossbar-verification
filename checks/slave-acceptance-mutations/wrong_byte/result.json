@@ -1,0 +1,31 @@
+{
+  "stage": "slave_implemented_features_acceptance",
+  "source_sha256": "78c0d795545983d9601491c3bef3fe36b258e81a44012f738f1272d946217e73",
+  "data_width": 32,
+  "id_width": 4,
+  "seed": 7,
+  "capacity": 4,
+  "uvm": "2020.3.2",
+  "results": [
+    {
+      "case": "smoke",
+      "passed": false,
+      "exit": 0,
+      "seconds": 0.55,
+      "counts": {
+        "ERROR": 4,
+        "FATAL": 0
+      },
+      "error_ids": [
+        "TEST_MEMORY",
+        "TEST_MEMORY",
+        "TEST_MEMORY",
+        "TEST_MEMORY"
+      ],
+      "expected_fatal": null,
+      "fatal_ids": [],
+      "log": "/private/var/folders/gk/l3vbsgss1snbdzgjx036bw_80000gp/T/axi-slave-fault-wrong_byte-qg05fepp/logs/slave_d32_i4/smoke_s7_c4.log"
+    }
+  ],
+  "verilator": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261026"
+}

@@ -1,0 +1,2 @@
+- memory.write_byte(word_base + 64'(lane), vif.mon.WDATA[8*lane +: 8]);
++ memory.write_byte(word_base + 64'(lane), vif.mon.WDATA[8*lane +: 8] ^ 8'h01);

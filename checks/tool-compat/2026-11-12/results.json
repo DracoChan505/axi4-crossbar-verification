@@ -1,0 +1,120 @@
+[
+  {
+    "name": "features",
+    "build_exit": 0,
+    "seconds": 3.04,
+    "command": [
+      "/tmp/axi-compat-20261112/local/tools/verilator-5.052/bin/verilator",
+      "--binary",
+      "--timing",
+      "--assert",
+      "--language",
+      "1800-2017",
+      "-Wno-fatal",
+      "--top-module",
+      "top",
+      "-j",
+      "2",
+      "--Mdir",
+      "/tmp/axi-compat-20261112/obj_features",
+      "/tmp/axi-compat-20261112/features.sv"
+    ],
+    "runs": [
+      {
+        "args": [],
+        "exit": 0,
+        "log": "features.run.log",
+        "output": "CLOCKING_PASS\n- /tmp/axi-compat-20261112/features.sv:20: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 25ns; walltime 0.000 s; speed 2.500 ms/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 1 MB\n"
+      }
+    ]
+  },
+  {
+    "name": "concurrency",
+    "build_exit": 0,
+    "seconds": 3.03,
+    "command": [
+      "/tmp/axi-compat-20261112/local/tools/verilator-5.052/bin/verilator",
+      "--binary",
+      "--timing",
+      "--assert",
+      "--language",
+      "1800-2017",
+      "-Wno-fatal",
+      "--top-module",
+      "top",
+      "-j",
+      "2",
+      "--Mdir",
+      "/tmp/axi-compat-20261112/obj_concurrency",
+      "/tmp/axi-compat-20261112/concurrency.sv"
+    ],
+    "runs": [
+      {
+        "args": [],
+        "exit": 0,
+        "log": "concurrency.run.log",
+        "output": "CONCURRENCY_PASS\n- /tmp/axi-compat-20261112/concurrency.sv:28: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 28ns; walltime 0.000 s; speed 1.077 ms/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 1 MB\n"
+      }
+    ]
+  },
+  {
+    "name": "assertions",
+    "build_exit": 0,
+    "seconds": 2.1,
+    "command": [
+      "/tmp/axi-compat-20261112/local/tools/verilator-5.052/bin/verilator",
+      "--binary",
+      "--timing",
+      "--assert",
+      "--language",
+      "1800-2017",
+      "-Wno-fatal",
+      "--top-module",
+      "top",
+      "-j",
+      "2",
+      "--Mdir",
+      "/tmp/axi-compat-20261112/obj_assertions",
+      "/tmp/axi-compat-20261112/assertions.sv"
+    ],
+    "runs": [
+      {
+        "args": [],
+        "exit": 0,
+        "log": "assertions.run.log",
+        "output": "ASSERTIONS_PASS errors=0\n- /tmp/axi-compat-20261112/assertions.sv:20: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 70ns; walltime 0.000 s; speed 1.522 ms/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 1 MB\n"
+      },
+      {
+        "args": [
+          "+FAULT"
+        ],
+        "exit": 0,
+        "log": "assertions.fault.run.log",
+        "output": "EXPECTED_HOLD_ERROR\nASSERTIONS_PASS errors=1\n- /tmp/axi-compat-20261112/assertions.sv:20: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 70ns; walltime 0.000 s; speed 1.944 ms/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 1 MB\n"
+      }
+    ]
+  },
+  {
+    "name": "coverage",
+    "build_exit": 1,
+    "seconds": 0.08,
+    "command": [
+      "/tmp/axi-compat-20261112/local/tools/verilator-5.052/bin/verilator",
+      "--binary",
+      "--timing",
+      "--assert",
+      "--language",
+      "1800-2017",
+      "-Wno-fatal",
+      "--top-module",
+      "top",
+      "-j",
+      "2",
+      "--Mdir",
+      "/tmp/axi-compat-20261112/obj_coverage",
+      "/tmp/axi-compat-20261112/coverage.sv",
+      "--coverage"
+    ],
+    "diagnostic": "%Error: /tmp/axi-compat-20261112/coverage.sv:13:10: Member 'pairs' not found in covergroup 'cg'\n                                                  : ... note: In instance 'top'\n   13 |   if(cov.pairs.get_inst_coverage()!=25.0) $fatal(1,\"COVER_PARTIAL\");\n      |          ^~~~~\n        ... See the manual at https://verilator.org/verilator_doc.html?v=5.052 for more assistance.\n%Error-UNSUPPORTED: /tmp/axi-compat-20261112/coverage.sv:13:16: Unsupported: Member call on object 'CONST '1'h0'' which is a 'BASICDTYPE 'bit''\n                                                              : ... note: In instance 'top'\n   13 |   if(cov.pairs.get_inst_coverage()!=25.0) $fatal(1,\"COVER_PARTIAL\");\n      |                ^~~~~~~~~~~~~~~~~\n                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.052\n%Error: Exiting due to 2 error(s)\n"
+  }
+]

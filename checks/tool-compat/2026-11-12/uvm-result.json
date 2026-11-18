@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/tmp/axi-compat-20261112/local/tools/verilator-5.052/bin/verilator",
+    "--binary",
+    "--timing",
+    "--assert",
+    "--vpi",
+    "--language",
+    "1800-2017",
+    "-Wno-fatal",
+    "--top-module",
+    "top",
+    "-j",
+    "4",
+    "--Mdir",
+    "/tmp/axi-compat-20261112/obj_uvm",
+    "+incdir+/tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src",
+    "-CFLAGS",
+    "-DUVM_NO_MALLOC -I/tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src/dpi",
+    "/tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src/uvm_pkg.sv",
+    "/tmp/axi-compat-20261112/uvm_response.sv",
+    "/tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src/dpi/uvm_dpi.cc"
+  ],
+  "build_exit": 0,
+  "seconds": 60.13,
+  "run_exit": 0,
+  "output": "%Warning: System has stack size 8176 kb which may be too small; failed to request more using 'ulimit -s 174192007'\nUVM_INFO /tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src/base/uvm_root.svh(457) @ 0: reporter [UVM/RELNOTES] \n  ***********       IMPORTANT RELEASE NOTES         ************\n\n  This implementation of the UVM Library deviates from the 1800.2-2020\n  standard.  See the DEVIATIONS.md file contained in the release\n  for more details.\n\n----------------------------------------------------------------\nAccellera:1800.2:UVM:2020.3.2\n\nAll copyright owners for this kit are listed in NOTICE.txt\nAll Rights Reserved Worldwide\n----------------------------------------------------------------\n\n      (Specify +UVM_NO_RELNOTES to turn off this notice)\n\nUVM_INFO @ 0: reporter [RNTST] Running test probe_test...\nUVM_INFO /tmp/axi-compat-20261112/uvm_response.sv(37) @ 35000: uvm_test_top.sq@@s [RESPONSE_PASS] two accepted, separate out-of-order callbacks matched\nUVM_INFO /tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src/base/uvm_report_server.svh(1009) @ 35000: reporter [UVM/REPORT/SERVER] \n--- UVM Report Summary ---\n\n** Report counts by severity\nUVM_INFO :    3\nUVM_WARNING :    0\nUVM_ERROR :    0\nUVM_FATAL :    0\n** Report counts by id\n[RESPONSE_PASS]     1\n[RNTST]     1\n[UVM/RELNOTES]     1\n\n- /tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src/base/uvm_test_runner.svh:297: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 35ns; walltime 0.016 s; speed 2.156 us/s\n- Verilator: cpu 0.016 s on 1 threads; allocated 13 MB\n"
+}

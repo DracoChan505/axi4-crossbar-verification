@@ -1,0 +1,295 @@
+{
+  "date": "2026-11-15",
+  "scope": "Slave Monitor and active/passive agent increment",
+  "total": 19,
+  "normal_passes": 11,
+  "expected_error_detections": 8,
+  "suites": [
+    {
+      "source": "logs/slave_monitor/results.json",
+      "date": "2026-11-15",
+      "source_sha256": "3c5a16edd556a1359d0faf29988a351568d2e6904d0256b236a65d8e589d8131",
+      "results": [
+        {
+          "case": "smoke",
+          "passed": true,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_errors": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/smoke.log"
+        },
+        {
+          "case": "snapshot",
+          "passed": true,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_errors": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/snapshot.log"
+        },
+        {
+          "case": "w_first",
+          "passed": true,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_errors": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/w_first.log"
+        },
+        {
+          "case": "order",
+          "passed": true,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_errors": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/order.log"
+        },
+        {
+          "case": "reset",
+          "passed": true,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_errors": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/reset.log"
+        },
+        {
+          "case": "neg_orphan",
+          "passed": true,
+          "counts": {
+            "ERROR": 1,
+            "FATAL": 0
+          },
+          "error_ids": [
+            "SM_ORPHAN_B"
+          ],
+          "expected_errors": [
+            "SM_ORPHAN_B"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/neg_orphan.log"
+        },
+        {
+          "case": "neg_early",
+          "passed": true,
+          "counts": {
+            "ERROR": 1,
+            "FATAL": 0
+          },
+          "error_ids": [
+            "SM_EARLY_B"
+          ],
+          "expected_errors": [
+            "SM_EARLY_B"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/neg_early.log"
+        },
+        {
+          "case": "neg_last",
+          "passed": true,
+          "counts": {
+            "ERROR": 1,
+            "FATAL": 0
+          },
+          "error_ids": [
+            "SM_W_LENGTH"
+          ],
+          "expected_errors": [
+            "SM_W_LENGTH"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/neg_last.log"
+        },
+        {
+          "case": "neg_strb",
+          "passed": true,
+          "counts": {
+            "ERROR": 1,
+            "FATAL": 0
+          },
+          "error_ids": [
+            "SM_WSTRB"
+          ],
+          "expected_errors": [
+            "SM_WSTRB"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/neg_strb.log"
+        },
+        {
+          "case": "neg_awstable",
+          "passed": true,
+          "counts": {
+            "ERROR": 1,
+            "FATAL": 0
+          },
+          "error_ids": [
+            "SM_AW_STABILITY"
+          ],
+          "expected_errors": [
+            "SM_AW_STABILITY"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/neg_awstable.log"
+        },
+        {
+          "case": "neg_wstable",
+          "passed": true,
+          "counts": {
+            "ERROR": 1,
+            "FATAL": 0
+          },
+          "error_ids": [
+            "SM_W_STABILITY"
+          ],
+          "expected_errors": [
+            "SM_W_STABILITY"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/neg_wstable.log"
+        },
+        {
+          "case": "neg_bstable",
+          "passed": true,
+          "counts": {
+            "ERROR": 1,
+            "FATAL": 0
+          },
+          "error_ids": [
+            "SM_B_STABILITY"
+          ],
+          "expected_errors": [
+            "SM_B_STABILITY"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/slave_monitor/neg_bstable.log"
+        }
+      ]
+    },
+    {
+      "source": "logs/uvm_crossbar_d32/results.json",
+      "date": "2026-11-15",
+      "data_width": 32,
+      "master_id_width": 2,
+      "slave_id_width": 4,
+      "source_sha256": "0e39c1598ceb943ded83cb05e92200e264777942f2db6e7de0e99f8609f58ccb",
+      "uvm": "2020.3.2",
+      "results": [
+        {
+          "seed": 7,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/uvm_crossbar_d32/seed7.log"
+        },
+        {
+          "seed": 41,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/uvm_crossbar_d32/seed41.log"
+        },
+        {
+          "seed": 2026,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/uvm_crossbar_d32/seed2026.log"
+        }
+      ]
+    },
+    {
+      "source": "logs/uvm_crossbar_d64/results.json",
+      "date": "2026-11-15",
+      "data_width": 64,
+      "master_id_width": 2,
+      "slave_id_width": 4,
+      "source_sha256": "0e39c1598ceb943ded83cb05e92200e264777942f2db6e7de0e99f8609f58ccb",
+      "uvm": "2020.3.2",
+      "results": [
+        {
+          "seed": 7,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/uvm_crossbar_d64/seed7.log"
+        },
+        {
+          "seed": 41,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/uvm_crossbar_d64/seed41.log"
+        },
+        {
+          "seed": 2026,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/uvm_crossbar_d64/seed2026.log"
+        }
+      ]
+    },
+    {
+      "source": "logs/uvm_crossbar_d32/seed7_memory_fault_result.json",
+      "date": "2026-11-15",
+      "data_width": 32,
+      "master_id_width": 2,
+      "slave_id_width": 4,
+      "source_sha256": "0e39c1598ceb943ded83cb05e92200e264777942f2db6e7de0e99f8609f58ccb",
+      "uvm": "2020.3.2",
+      "results": [
+        {
+          "seed": 7,
+          "expected_memory_fault": true,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 1,
+            "FATAL": 0
+          },
+          "error_ids": [
+            "SYS_MEMORY"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/验证/axi4-crossbar/logs/uvm_crossbar_d32/seed7_memory_fault.log"
+        }
+      ]
+    }
+  ]
+}

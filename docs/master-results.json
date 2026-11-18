@@ -1,0 +1,531 @@
+{
+  "date": "2026-11-12",
+  "scope": "external Master agent only",
+  "source_sha256": "6494ec4818730f0347e7b2c04b93c4d5456f6444bfd75fb06435e7d263ffc784",
+  "passed": 32,
+  "total": 32,
+  "negative_detection_runs": 8,
+  "coverage_native_bins_checked": {
+    "supported[0]": 1,
+    "supported[1]": 3,
+    "supported[2]": 5,
+    "single": 1,
+    "short_burst": 6,
+    "long_burst": 1,
+    "maximum": 1
+  },
+  "results": [
+    {
+      "case": "smoke",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.07,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/smoke_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=smoke aw=1 w=1 b=1 peak=1 pending_peak=1 aw_first=0 w_first=0 same=1 reorder=0 b_stall=0"
+    },
+    {
+      "case": "w_first",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/w_first_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=w_first aw=1 w=4 b=1 peak=1 pending_peak=1 aw_first=0 w_first=1 same=0 reorder=0 b_stall=0"
+    },
+    {
+      "case": "aw_first",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/aw_first_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=aw_first aw=1 w=5 b=1 peak=1 pending_peak=1 aw_first=1 w_first=0 same=0 reorder=0 b_stall=0"
+    },
+    {
+      "case": "bursts",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.02,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/bursts_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=bursts aw=9 w=305 b=9 peak=2 pending_peak=2 aw_first=3 w_first=0 same=6 reorder=0 b_stall=0"
+    },
+    {
+      "case": "same_id",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/same_id_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=same_id aw=6 w=18 b=6 peak=2 pending_peak=2 aw_first=1 w_first=0 same=5 reorder=0 b_stall=0"
+    },
+    {
+      "case": "reorder",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/reorder_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=reorder aw=4 w=8 b=4 peak=2 pending_peak=2 aw_first=1 w_first=0 same=3 reorder=2 b_stall=0"
+    },
+    {
+      "case": "backpressure",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.02,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/backpressure_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=backpressure aw=8 w=56 b=8 peak=2 pending_peak=2 aw_first=8 w_first=0 same=0 reorder=0 b_stall=33"
+    },
+    {
+      "case": "error_resp",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/error_resp_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=error_resp aw=1 w=3 b=1 peak=1 pending_peak=1 aw_first=0 w_first=0 same=1 reorder=0 b_stall=0"
+    },
+    {
+      "case": "invalid_item",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/invalid_item_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=invalid_item aw=1 w=1 b=1 peak=1 pending_peak=1 aw_first=0 w_first=0 same=1 reorder=0 b_stall=0"
+    },
+    {
+      "case": "reset_aw",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/reset_aw_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=reset_aw aw=2 w=2 b=1 peak=1 pending_peak=1 aw_first=0 w_first=0 same=1 reorder=0 b_stall=0"
+    },
+    {
+      "case": "reset_w",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/reset_w_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=reset_w aw=2 w=5 b=1 peak=1 pending_peak=1 aw_first=0 w_first=0 same=1 reorder=0 b_stall=0"
+    },
+    {
+      "case": "reset_b",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/reset_b_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=reset_b aw=2 w=34 b=1 peak=1 pending_peak=1 aw_first=0 w_first=0 same=2 reorder=0 b_stall=0"
+    },
+    {
+      "case": "reset_bvalid",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/reset_bvalid_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=reset_bvalid aw=2 w=34 b=1 peak=1 pending_peak=1 aw_first=0 w_first=0 same=2 reorder=0 b_stall=1"
+    },
+    {
+      "case": "reset_queued",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/reset_queued_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=reset_queued aw=3 w=2 b=1 peak=2 pending_peak=2 aw_first=0 w_first=0 same=1 reorder=0 b_stall=0"
+    },
+    {
+      "case": "neg_orphan",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/neg_orphan_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": null
+    },
+    {
+      "case": "neg_early",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/neg_early_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": null
+    },
+    {
+      "case": "neg_last",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/neg_last_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": null
+    },
+    {
+      "case": "neg_bstable",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/neg_bstable_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": null
+    },
+    {
+      "case": "neg_duplicate",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/neg_duplicate_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": null
+    },
+    {
+      "case": "neg_awstable",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/neg_awstable_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": null
+    },
+    {
+      "case": "neg_wstable",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/neg_wstable_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": null
+    },
+    {
+      "case": "neg_strb",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/neg_strb_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": null
+    },
+    {
+      "case": "random",
+      "seed": 7,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.04,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/random_s7_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=random aw=48 w=444 b=48 peak=2 pending_peak=2 aw_first=40 w_first=5 same=3 reorder=6 b_stall=0"
+    },
+    {
+      "case": "random",
+      "seed": 41,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.04,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/random_s41_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=random aw=48 w=439 b=48 peak=2 pending_peak=2 aw_first=37 w_first=7 same=4 reorder=12 b_stall=0"
+    },
+    {
+      "case": "random",
+      "seed": 2026,
+      "max_out": 2,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.04,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i2/random_s2026_o2.log",
+      "data_width": 32,
+      "id_width": 2,
+      "observed_counters": "case=random aw=48 w=368 b=48 peak=2 pending_peak=2 aw_first=37 w_first=11 same=0 reorder=10 b_stall=0"
+    },
+    {
+      "case": "bursts",
+      "seed": 41,
+      "max_out": 4,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.56,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d64_i3/bursts_s41_o4.log",
+      "data_width": 64,
+      "id_width": 3,
+      "observed_counters": "case=bursts aw=9 w=305 b=9 peak=4 pending_peak=2 aw_first=7 w_first=0 same=2 reorder=0 b_stall=0"
+    },
+    {
+      "case": "same_id",
+      "seed": 41,
+      "max_out": 4,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d64_i3/same_id_s41_o4.log",
+      "data_width": 64,
+      "id_width": 3,
+      "observed_counters": "case=same_id aw=6 w=18 b=6 peak=4 pending_peak=2 aw_first=3 w_first=0 same=3 reorder=0 b_stall=0"
+    },
+    {
+      "case": "reorder",
+      "seed": 41,
+      "max_out": 4,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.01,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d64_i3/reorder_s41_o4.log",
+      "data_width": 64,
+      "id_width": 3,
+      "observed_counters": "case=reorder aw=4 w=8 b=4 peak=4 pending_peak=1 aw_first=3 w_first=0 same=1 reorder=2 b_stall=0"
+    },
+    {
+      "case": "random",
+      "seed": 41,
+      "max_out": 4,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.04,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d64_i3/random_s41_o4.log",
+      "data_width": 64,
+      "id_width": 3,
+      "observed_counters": "case=random aw=48 w=439 b=48 peak=4 pending_peak=2 aw_first=47 w_first=1 same=0 reorder=11 b_stall=0"
+    },
+    {
+      "case": "smoke",
+      "seed": 41,
+      "max_out": 1,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.4,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i1/smoke_s41_o1.log",
+      "data_width": 32,
+      "id_width": 1,
+      "observed_counters": "case=smoke aw=1 w=1 b=1 peak=1 pending_peak=1 aw_first=0 w_first=0 same=1 reorder=0 b_stall=0"
+    },
+    {
+      "case": "bursts",
+      "seed": 41,
+      "max_out": 1,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.02,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i1/bursts_s41_o1.log",
+      "data_width": 32,
+      "id_width": 1,
+      "observed_counters": "case=bursts aw=9 w=305 b=9 peak=1 pending_peak=2 aw_first=0 w_first=0 same=9 reorder=0 b_stall=0"
+    },
+    {
+      "case": "random",
+      "seed": 41,
+      "max_out": 1,
+      "passed": true,
+      "exit": 0,
+      "seconds": 0.04,
+      "counts": {
+        "ERROR": 0,
+        "FATAL": 0
+      },
+      "log": "logs/d32_i1/random_s41_o1.log",
+      "data_width": 32,
+      "id_width": 1,
+      "observed_counters": "case=random aw=48 w=439 b=48 peak=1 pending_peak=2 aw_first=18 w_first=21 same=9 reorder=0 b_stall=0"
+    }
+  ]
+}

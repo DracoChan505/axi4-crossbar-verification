@@ -1,0 +1,3 @@
+[0] %Fatal: coverage_group.sv:13: Assertion failed in top: COVER_PARTIAL
+%Error: /tmp/axi-compat-20261112/coverage_group.sv:13: Verilog $stop
+Aborting...

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "coverage_diagnostic",
+    "build_exit": 0,
+    "seconds": 3.57,
+    "command": [
+      "/tmp/axi-compat-20261112/local/tools/verilator-5.052/bin/verilator",
+      "--binary",
+      "--timing",
+      "--assert",
+      "--language",
+      "1800-2017",
+      "-Wno-fatal",
+      "--top-module",
+      "top",
+      "-j",
+      "2",
+      "--Mdir",
+      "/tmp/axi-compat-20261112/obj_coverage_diagnostic",
+      "/tmp/axi-compat-20261112/coverage_diagnostic.sv",
+      "--coverage"
+    ],
+    "runs": [
+      {
+        "args": [],
+        "exit": 0,
+        "log": "coverage_diagnostic.run.log",
+        "output": "PARTIAL=37.500000\nFULL=100.000000\nCOVERAGE_DIAGNOSTIC_ONLY\n- /tmp/axi-compat-20261112/coverage_diagnostic.sv:18: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 0s; walltime 0.000 s; speed 0.000 s/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 2 MB\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-15",
+  "source_sha256": "bcc042156decd88ef55941faa5e5086c72d01ba3253216ea133b97ec1f3bd1ea",
+  "tool": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261026",
+  "results": [
+    {
+      "config": "i4_s4_a32_d32_c2_4",
+      "seed": 7,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i4_s4_a32_d32_c2_4_s7.log"
+    },
+    {
+      "config": "i4_s4_a32_d32_c2_4",
+      "seed": 41,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i4_s4_a32_d32_c2_4_s41.log"
+    },
+    {
+      "config": "i4_s4_a32_d32_c2_4",
+      "seed": 2026,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i4_s4_a32_d32_c2_4_s2026.log"
+    },
+    {
+      "config": "i3_s2_a32_d32_c3_3",
+      "seed": 7,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i3_s2_a32_d32_c3_3_s7.log"
+    },
+    {
+      "config": "i3_s2_a32_d32_c3_3",
+      "seed": 41,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i3_s2_a32_d32_c3_3_s41.log"
+    },
+    {
+      "config": "i3_s2_a32_d32_c3_3",
+      "seed": 2026,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i3_s2_a32_d32_c3_3_s2026.log"
+    },
+    {
+      "config": "i3_s2_a32_d32_c3_3",
+      "negative": "BAD_SOURCE",
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i3_s2_a32_d32_c3_3_BAD_SOURCE.log"
+    },
+    {
+      "config": "i1_s1_a32_d32_c1_1",
+      "seed": 7,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i1_s1_a32_d32_c1_1_s7.log"
+    },
+    {
+      "config": "i1_s1_a32_d32_c1_1",
+      "seed": 41,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i1_s1_a32_d32_c1_1_s41.log"
+    },
+    {
+      "config": "i1_s1_a32_d32_c1_1",
+      "seed": 2026,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i1_s1_a32_d32_c1_1_s2026.log"
+    },
+    {
+      "config": "i4_s4_a64_d64_c2_4",
+      "seed": 7,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i4_s4_a64_d64_c2_4_s7.log"
+    },
+    {
+      "config": "i4_s4_a64_d64_c2_4",
+      "seed": 41,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i4_s4_a64_d64_c2_4_s41.log"
+    },
+    {
+      "config": "i4_s4_a64_d64_c2_4",
+      "seed": 2026,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/crossbar_write/i4_s4_a64_d64_c2_4_s2026.log"
+    }
+  ]
+}

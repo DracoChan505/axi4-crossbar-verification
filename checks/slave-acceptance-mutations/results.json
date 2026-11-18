@@ -1,0 +1,101 @@
+{
+  "scope": "two_seeded_faults_only",
+  "mutations": [
+    {
+      "name": "wrong_bid",
+      "killed": true,
+      "expected_error": "TEST_BID",
+      "temporary": "/var/folders/gk/l3vbsgss1snbdzgjx036bw_80000gp/T/axi-slave-fault-wrong_bid-1y_7z2ag",
+      "changed_files": [
+        "dv/slave/axi_slave_driver.svh"
+      ],
+      "frozen_source_hashes": {
+        "dv/checkers/axi_write_checker.sv": "032d73e491405ebc7224634bc3b082152b541f62fa3ded7d797272c836138315",
+        "dv/interfaces/axi_write_if.sv": "4405a792cb76b1cebc871cfae9509d82735669a3ee42e8049adc759d027f616d",
+        "dv/master/axi_master_pkg.sv": "9198ae728ed26062e9470efe0eef8d41834678537df2f542656600e9dd2a9468",
+        "dv/slave/axi_slave_pkg.sv": "ad95f6a628506bf018942596e6f7d9797f202ace32b9d2b09ee611d15b2656eb",
+        "dv/tests/master/master_test_pkg.sv": "c9d21949be74908e7dbea2596fa9fe4cfcf8155eeb9c06996c50c269e8716284",
+        "dv/tests/master/top.sv": "7566eb69e34130f6eda5abcb0496dd1bef37e13b746a7b357b1795144aa61d8a",
+        "dv/tests/slave/slave_test_pkg.sv": "b0217e2af45a35c994eceb11498b990a6dc1f95ea7ec74ddec6d3d9fe0a97015",
+        "dv/tests/slave/top.sv": "56b93107646d67b56c6d242338b93da850ea559b08fe779abc8650ddac8c3856",
+        "dv/interfaces/axi_widths.svh": "ca395d7870ef6dd00ddc5359369ffeb9b26fc4f75c5a99a692cf0bda4fae52a7",
+        "dv/master/axi_master_agent.svh": "a5e564cf789cb075046a7bc39240c0e5bfa5c6d01bcb705ace23902f4cdcb58c",
+        "dv/master/axi_master_cfg.svh": "bcf24628b92732d104573894fd29494ba983fbdd035f8cb8809e708a889b5b0c",
+        "dv/master/axi_master_driver.svh": "285394da48f9d98f8361f497de89b1089560409783c7bc96a68d94bb89c4e05a",
+        "dv/master/axi_master_monitor.svh": "1752ea15c77b78823929bddf863127b13c811d25cd59e8c1204eea09ea054b07",
+        "dv/master/axi_write_item.svh": "9cd11f063ff211fdfcc09106030b04b96bf52f0b91cfcb5d62f6e8f1ac654302",
+        "dv/slave/axi_slave_cfg.svh": "32d7922319de73375aeed7bab79fa5ffe81b610865a5c1e639a5056e9692c3f0",
+        "dv/slave/axi_slave_driver.svh": "63d7cce1b612e1f717ff010bc867757134ffa2f736082f0fa6a8d3bb80e7d9cb",
+        "dv/slave/axi_slave_memory.svh": "b0299a2bf9b3f3ef2d39fde03b691431012835cb21d0b5226c5456852bcfb069",
+        "dv/slave/axi_slave_record.svh": "4f07ee2ce460e977dcf7716f36592f17f2b6eea5de48fbb996f3a5957bfd52f1",
+        "dv/tests/slave/slave_acceptance_test.svh": "327f0927f856e801fe629355e1102b998d35a465a7538a24e96dde498ea939ba"
+      },
+      "result": {
+        "case": "smoke",
+        "passed": false,
+        "exit": 0,
+        "seconds": 0.84,
+        "counts": {
+          "ERROR": 2,
+          "FATAL": 0
+        },
+        "error_ids": [
+          "TEST_BID",
+          "TEST_BID"
+        ],
+        "expected_fatal": null,
+        "fatal_ids": [],
+        "log": "/private/var/folders/gk/l3vbsgss1snbdzgjx036bw_80000gp/T/axi-slave-fault-wrong_bid-1y_7z2ag/logs/slave_d32_i4/smoke_s7_c4.log"
+      }
+    },
+    {
+      "name": "wrong_byte",
+      "killed": true,
+      "expected_error": "TEST_MEMORY",
+      "temporary": "/var/folders/gk/l3vbsgss1snbdzgjx036bw_80000gp/T/axi-slave-fault-wrong_byte-qg05fepp",
+      "changed_files": [
+        "dv/slave/axi_slave_driver.svh"
+      ],
+      "frozen_source_hashes": {
+        "dv/checkers/axi_write_checker.sv": "032d73e491405ebc7224634bc3b082152b541f62fa3ded7d797272c836138315",
+        "dv/interfaces/axi_write_if.sv": "4405a792cb76b1cebc871cfae9509d82735669a3ee42e8049adc759d027f616d",
+        "dv/master/axi_master_pkg.sv": "9198ae728ed26062e9470efe0eef8d41834678537df2f542656600e9dd2a9468",
+        "dv/slave/axi_slave_pkg.sv": "ad95f6a628506bf018942596e6f7d9797f202ace32b9d2b09ee611d15b2656eb",
+        "dv/tests/master/master_test_pkg.sv": "c9d21949be74908e7dbea2596fa9fe4cfcf8155eeb9c06996c50c269e8716284",
+        "dv/tests/master/top.sv": "7566eb69e34130f6eda5abcb0496dd1bef37e13b746a7b357b1795144aa61d8a",
+        "dv/tests/slave/slave_test_pkg.sv": "b0217e2af45a35c994eceb11498b990a6dc1f95ea7ec74ddec6d3d9fe0a97015",
+        "dv/tests/slave/top.sv": "56b93107646d67b56c6d242338b93da850ea559b08fe779abc8650ddac8c3856",
+        "dv/interfaces/axi_widths.svh": "ca395d7870ef6dd00ddc5359369ffeb9b26fc4f75c5a99a692cf0bda4fae52a7",
+        "dv/master/axi_master_agent.svh": "a5e564cf789cb075046a7bc39240c0e5bfa5c6d01bcb705ace23902f4cdcb58c",
+        "dv/master/axi_master_cfg.svh": "bcf24628b92732d104573894fd29494ba983fbdd035f8cb8809e708a889b5b0c",
+        "dv/master/axi_master_driver.svh": "285394da48f9d98f8361f497de89b1089560409783c7bc96a68d94bb89c4e05a",
+        "dv/master/axi_master_monitor.svh": "1752ea15c77b78823929bddf863127b13c811d25cd59e8c1204eea09ea054b07",
+        "dv/master/axi_write_item.svh": "9cd11f063ff211fdfcc09106030b04b96bf52f0b91cfcb5d62f6e8f1ac654302",
+        "dv/slave/axi_slave_cfg.svh": "32d7922319de73375aeed7bab79fa5ffe81b610865a5c1e639a5056e9692c3f0",
+        "dv/slave/axi_slave_driver.svh": "63d7cce1b612e1f717ff010bc867757134ffa2f736082f0fa6a8d3bb80e7d9cb",
+        "dv/slave/axi_slave_memory.svh": "b0299a2bf9b3f3ef2d39fde03b691431012835cb21d0b5226c5456852bcfb069",
+        "dv/slave/axi_slave_record.svh": "4f07ee2ce460e977dcf7716f36592f17f2b6eea5de48fbb996f3a5957bfd52f1",
+        "dv/tests/slave/slave_acceptance_test.svh": "327f0927f856e801fe629355e1102b998d35a465a7538a24e96dde498ea939ba"
+      },
+      "result": {
+        "case": "smoke",
+        "passed": false,
+        "exit": 0,
+        "seconds": 0.55,
+        "counts": {
+          "ERROR": 4,
+          "FATAL": 0
+        },
+        "error_ids": [
+          "TEST_MEMORY",
+          "TEST_MEMORY",
+          "TEST_MEMORY",
+          "TEST_MEMORY"
+        ],
+        "expected_fatal": null,
+        "fatal_ids": [],
+        "log": "/private/var/folders/gk/l3vbsgss1snbdzgjx036bw_80000gp/T/axi-slave-fault-wrong_byte-qg05fepp/logs/slave_d32_i4/smoke_s7_c4.log"
+      }
+    }
+  ]
+}

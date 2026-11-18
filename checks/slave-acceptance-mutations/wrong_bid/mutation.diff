@@ -1,0 +1,2 @@
+- vif.sink.BID <= returning.id;
++ vif.sink.BID <= returning.id ^ ID_W'(1);

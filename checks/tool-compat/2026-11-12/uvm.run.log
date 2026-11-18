@@ -1,0 +1,36 @@
+%Warning: System has stack size 8176 kb which may be too small; failed to request more using 'ulimit -s 174192007'
+UVM_INFO /tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src/base/uvm_root.svh(457) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2020
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2:UVM:2020.3.2
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test probe_test...
+UVM_INFO /tmp/axi-compat-20261112/uvm_response.sv(37) @ 35000: uvm_test_top.sq@@s [RESPONSE_PASS] two accepted, separate out-of-order callbacks matched
+UVM_INFO /tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src/base/uvm_report_server.svh(1009) @ 35000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    3
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RESPONSE_PASS]     1
+[RNTST]     1
+[UVM/RELNOTES]     1
+
+- /tmp/axi-compat-20261112/local/third_party/1800.2-2020.3.2/src/base/uvm_test_runner.svh:297: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 35ns; walltime 0.016 s; speed 2.156 us/s
+- Verilator: cpu 0.016 s on 1 threads; allocated 13 MB

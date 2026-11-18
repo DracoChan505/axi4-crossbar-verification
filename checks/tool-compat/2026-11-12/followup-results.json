@@ -1,0 +1,69 @@
+[
+  {
+    "name": "coverage_basic",
+    "build_exit": 0,
+    "seconds": 5.33,
+    "command": [
+      "/tmp/axi-compat-20261112/local/tools/verilator-5.052/bin/verilator",
+      "--binary",
+      "--timing",
+      "--assert",
+      "--language",
+      "1800-2017",
+      "-Wno-fatal",
+      "--top-module",
+      "top",
+      "-j",
+      "2",
+      "--Mdir",
+      "/tmp/axi-compat-20261112/obj_coverage_basic",
+      "/tmp/axi-compat-20261112/coverage_basic.sv",
+      "--coverage"
+    ],
+    "runs": [
+      {
+        "args": [],
+        "exit": 0,
+        "log": "coverage_basic.run.log",
+        "output": "COVERAGE_PASS\n- /tmp/axi-compat-20261112/coverage_basic.sv:17: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 0s; walltime 0.000 s; speed 0.000 s/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 1 MB\n"
+      }
+    ]
+  },
+  {
+    "name": "assertions_reset",
+    "build_exit": 0,
+    "seconds": 3.83,
+    "command": [
+      "/tmp/axi-compat-20261112/local/tools/verilator-5.052/bin/verilator",
+      "--binary",
+      "--timing",
+      "--assert",
+      "--language",
+      "1800-2017",
+      "-Wno-fatal",
+      "--top-module",
+      "top",
+      "-j",
+      "2",
+      "--Mdir",
+      "/tmp/axi-compat-20261112/obj_assertions_reset",
+      "/tmp/axi-compat-20261112/assertions_reset.sv"
+    ],
+    "runs": [
+      {
+        "args": [],
+        "exit": 0,
+        "log": "assertions_reset.run.log",
+        "output": "ASSERTIONS_PASS errors=0\n- /tmp/axi-compat-20261112/assertions_reset.sv:21: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 80ns; walltime 0.000 s; speed 3.077 ms/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 1 MB\n"
+      },
+      {
+        "args": [
+          "+FAULT"
+        ],
+        "exit": 0,
+        "log": "assertions_reset.fault.run.log",
+        "output": "EXPECTED_HOLD_ERROR\nASSERTIONS_PASS errors=1\n- /tmp/axi-compat-20261112/assertions_reset.sv:21: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05\n- Verilator: $finish at 80ns; walltime 0.000 s; speed 3.810 ms/s\n- Verilator: cpu 0.000 s on 1 threads; allocated 1 MB\n"
+      }
+    ]
+  }
+]

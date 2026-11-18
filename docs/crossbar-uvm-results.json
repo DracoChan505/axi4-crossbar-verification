@@ -1,0 +1,991 @@
+{
+  "date": "2026-11-15",
+  "runs": 68,
+  "system_normal_runs": 6,
+  "system_expected_memory_fault_runs": 1,
+  "legacy_master_runs": 25,
+  "legacy_slave_runs": 36,
+  "reports": [
+    {
+      "source": "logs/uvm_crossbar_d32/results.json",
+      "date": "2026-11-15",
+      "data_width": 32,
+      "master_id_width": 2,
+      "slave_id_width": 4,
+      "source_sha256": "e4e32a00b300424a4dc835fe8dabfc9fbdd77f0dd3e5bda32e1f45b765ab21d4",
+      "uvm": "2020.3.2",
+      "results": [
+        {
+          "seed": 7,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/uvm_crossbar_d32/seed7.log"
+        },
+        {
+          "seed": 41,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/uvm_crossbar_d32/seed41.log"
+        },
+        {
+          "seed": 2026,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/uvm_crossbar_d32/seed2026.log"
+        }
+      ]
+    },
+    {
+      "source": "logs/uvm_crossbar_d64/results.json",
+      "date": "2026-11-15",
+      "data_width": 64,
+      "master_id_width": 2,
+      "slave_id_width": 4,
+      "source_sha256": "e4e32a00b300424a4dc835fe8dabfc9fbdd77f0dd3e5bda32e1f45b765ab21d4",
+      "uvm": "2020.3.2",
+      "results": [
+        {
+          "seed": 7,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/uvm_crossbar_d64/seed7.log"
+        },
+        {
+          "seed": 41,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/uvm_crossbar_d64/seed41.log"
+        },
+        {
+          "seed": 2026,
+          "expected_memory_fault": false,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/uvm_crossbar_d64/seed2026.log"
+        }
+      ]
+    },
+    {
+      "source": "logs/uvm_crossbar_d32/seed7_memory_fault_result.json",
+      "date": "2026-11-15",
+      "data_width": 32,
+      "master_id_width": 2,
+      "slave_id_width": 4,
+      "source_sha256": "e4e32a00b300424a4dc835fe8dabfc9fbdd77f0dd3e5bda32e1f45b765ab21d4",
+      "uvm": "2020.3.2",
+      "results": [
+        {
+          "seed": 7,
+          "expected_memory_fault": true,
+          "passed": true,
+          "exit": 0,
+          "counts": {
+            "ERROR": 1,
+            "FATAL": 0
+          },
+          "error_ids": [
+            "SYS_MEMORY"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/uvm_crossbar_d32/seed7_memory_fault.log"
+        }
+      ]
+    },
+    {
+      "source": "logs/d32_i2/results.json",
+      "source_sha256": "270c3e4e4ad7e8d0cd95bcec29462fb02e27433e84e7aa66c8dbf4ed3f4cd3f0",
+      "data_width": 32,
+      "id_width": 2,
+      "uvm": "2020.3.2",
+      "verilator": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261026",
+      "results": [
+        {
+          "case": "smoke",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.53,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "smoke_s7_o2.log"
+        },
+        {
+          "case": "w_first",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "w_first_s7_o2.log"
+        },
+        {
+          "case": "aw_first",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.04,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "aw_first_s7_o2.log"
+        },
+        {
+          "case": "bursts",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.05,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "bursts_s7_o2.log"
+        },
+        {
+          "case": "same_id",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "same_id_s7_o2.log"
+        },
+        {
+          "case": "reorder",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "reorder_s7_o2.log"
+        },
+        {
+          "case": "backpressure",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "backpressure_s7_o2.log"
+        },
+        {
+          "case": "error_resp",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "error_resp_s7_o2.log"
+        },
+        {
+          "case": "invalid_item",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "invalid_item_s7_o2.log"
+        },
+        {
+          "case": "reset_aw",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "reset_aw_s7_o2.log"
+        },
+        {
+          "case": "reset_w",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "reset_w_s7_o2.log"
+        },
+        {
+          "case": "reset_b",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "reset_b_s7_o2.log"
+        },
+        {
+          "case": "reset_bvalid",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "reset_bvalid_s7_o2.log"
+        },
+        {
+          "case": "reset_queued",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.04,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "reset_queued_s7_o2.log"
+        },
+        {
+          "case": "neg_orphan",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "neg_orphan_s7_o2.log"
+        },
+        {
+          "case": "neg_early",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "neg_early_s7_o2.log"
+        },
+        {
+          "case": "neg_last",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "neg_last_s7_o2.log"
+        },
+        {
+          "case": "neg_bstable",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "neg_bstable_s7_o2.log"
+        },
+        {
+          "case": "neg_duplicate",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "neg_duplicate_s7_o2.log"
+        },
+        {
+          "case": "neg_awstable",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "neg_awstable_s7_o2.log"
+        },
+        {
+          "case": "neg_wstable",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "neg_wstable_s7_o2.log"
+        },
+        {
+          "case": "neg_strb",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "neg_strb_s7_o2.log"
+        },
+        {
+          "case": "random",
+          "seed": 7,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.08,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "random_s7_o2.log"
+        },
+        {
+          "case": "random",
+          "seed": 41,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.08,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "random_s41_o2.log"
+        },
+        {
+          "case": "random",
+          "seed": 2026,
+          "max_out": 2,
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.06,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "log": "random_s2026_o2.log"
+        }
+      ]
+    },
+    {
+      "source": "logs/slave_d32_i4/results.json",
+      "stage": "slave_response_and_backpressure",
+      "source_sha256": "14ca6a24771bd23a47b2a4380e9613a5b18e7e2ff825600e90f94ab1cc2f2ad3",
+      "data_width": 32,
+      "id_width": 4,
+      "seed": 7,
+      "capacity": 4,
+      "uvm": "2020.3.2",
+      "results": [
+        {
+          "case": "smoke",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.47,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/smoke_s7_c4.log"
+        },
+        {
+          "case": "w_first",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/w_first_s7_c4.log"
+        },
+        {
+          "case": "unaligned",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/unaligned_s7_c4.log"
+        },
+        {
+          "case": "sparse",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/sparse_s7_c4.log"
+        },
+        {
+          "case": "max_burst",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/max_burst_s7_c4.log"
+        },
+        {
+          "case": "delay",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/delay_s7_c4.log"
+        },
+        {
+          "case": "b_stall",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/b_stall_s7_c4.log"
+        },
+        {
+          "case": "reject",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reject_s7_c4.log"
+        },
+        {
+          "case": "outside",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/outside_s7_c4.log"
+        },
+        {
+          "case": "reset_partial",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reset_partial_s7_c4.log"
+        },
+        {
+          "case": "clear",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/clear_s7_c4.log"
+        },
+        {
+          "case": "neg_wlast",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "error_ids": [],
+          "expected_fatal": "SLAVE_WLAST",
+          "fatal_ids": [
+            "SLAVE_WLAST"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/neg_wlast_s7_c4.log"
+        },
+        {
+          "case": "neg_strb",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "error_ids": [],
+          "expected_fatal": "SLAVE_WSTRB",
+          "fatal_ids": [
+            "SLAVE_WSTRB"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/neg_strb_s7_c4.log"
+        },
+        {
+          "case": "neg_boundary",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "error_ids": [],
+          "expected_fatal": "SLAVE_BOUNDARY",
+          "fatal_ids": [
+            "SLAVE_BOUNDARY"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/neg_boundary_s7_c4.log"
+        },
+        {
+          "case": "capacity",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/capacity_s7_c4.log"
+        },
+        {
+          "case": "same_id",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/same_id_s7_c4.log"
+        },
+        {
+          "case": "byte_matrix",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/byte_matrix_s7_c4.log"
+        },
+        {
+          "case": "reset_idle",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reset_idle_s7_c4.log"
+        },
+        {
+          "case": "reset_aw",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reset_aw_s7_c4.log"
+        },
+        {
+          "case": "reset_bdelay",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reset_bdelay_s7_c4.log"
+        },
+        {
+          "case": "reset_bvalid",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reset_bvalid_s7_c4.log"
+        },
+        {
+          "case": "clear_busy",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/clear_busy_s7_c4.log"
+        },
+        {
+          "case": "clear_reset",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/clear_reset_s7_c4.log"
+        },
+        {
+          "case": "offset_window",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/offset_window_s7_c4.log"
+        },
+        {
+          "case": "delay_one",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/delay_one_s7_c4.log"
+        },
+        {
+          "case": "integration",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/integration_s7_c4.log"
+        },
+        {
+          "case": "invalid_cfg",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "error_ids": [],
+          "expected_fatal": "SLAVE_CONFIG",
+          "fatal_ids": [
+            "SLAVE_CONFIG"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/invalid_cfg_s7_c4.log"
+        },
+        {
+          "case": "reorder",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reorder_s7_c4.log"
+        },
+        {
+          "case": "reorder_same_id",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reorder_same_id_s7_c4.log"
+        },
+        {
+          "case": "b_lock",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/b_lock_s7_c4.log"
+        },
+        {
+          "case": "ordered_delay",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/ordered_delay_s7_c4.log"
+        },
+        {
+          "case": "periodic_backpressure",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/periodic_backpressure_s7_c4.log"
+        },
+        {
+          "case": "random_backpressure",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/random_backpressure_s7_c4.log"
+        },
+        {
+          "case": "reset_policies",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reset_policies_s7_c4.log"
+        },
+        {
+          "case": "integration_stress",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.03,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "error_ids": [],
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/integration_stress_s7_c4.log"
+        },
+        {
+          "case": "invalid_stall",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "error_ids": [],
+          "expected_fatal": "SLAVE_CONFIG",
+          "fatal_ids": [
+            "SLAVE_CONFIG"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/invalid_stall_s7_c4.log"
+        }
+      ],
+      "verilator": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261026"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+%Error: /tmp/axi-compat-20261112/coverage.sv:13:10: Member 'pairs' not found in covergroup 'cg'
+                                                  : ... note: In instance 'top'
+   13 |   if(cov.pairs.get_inst_coverage()!=25.0) $fatal(1,"COVER_PARTIAL");
+      |          ^~~~~
+        ... See the manual at https://verilator.org/verilator_doc.html?v=5.052 for more assistance.
+%Error-UNSUPPORTED: /tmp/axi-compat-20261112/coverage.sv:13:16: Unsupported: Member call on object 'CONST '1'h0'' which is a 'BASICDTYPE 'bit''
+                                                              : ... note: In instance 'top'
+   13 |   if(cov.pairs.get_inst_coverage()!=25.0) $fatal(1,"COVER_PARTIAL");
+      |                ^~~~~~~~~~~~~~~~~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.052
+%Error: Exiting due to 2 error(s)

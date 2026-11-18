@@ -1,0 +1,29 @@
+{
+  "stage": "slave_implemented_features_acceptance",
+  "source_sha256": "a0fcdce6735f626c58ec943d8dc522e7de0217f3dd9db10fe97d9e2abd1ecfbf",
+  "data_width": 32,
+  "id_width": 4,
+  "seed": 7,
+  "capacity": 4,
+  "uvm": "2020.3.2",
+  "results": [
+    {
+      "case": "smoke",
+      "passed": false,
+      "exit": 0,
+      "seconds": 0.84,
+      "counts": {
+        "ERROR": 2,
+        "FATAL": 0
+      },
+      "error_ids": [
+        "TEST_BID",
+        "TEST_BID"
+      ],
+      "expected_fatal": null,
+      "fatal_ids": [],
+      "log": "/private/var/folders/gk/l3vbsgss1snbdzgjx036bw_80000gp/T/axi-slave-fault-wrong_bid-1y_7z2ag/logs/slave_d32_i4/smoke_s7_c4.log"
+    }
+  ],
+  "verilator": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261026"
+}

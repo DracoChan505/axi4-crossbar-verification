@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-15",
+  "source_sha256": "269d53932e37790eb2c2e4ecb80c042437c77a9d15ed0b611717feb6aeb5ed4c",
+  "tool": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261026",
+  "results": [
+    {
+      "config": "p4_a32",
+      "seed": 7,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p4_a32_s7.log"
+    },
+    {
+      "config": "p4_a32",
+      "seed": 41,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p4_a32_s41.log"
+    },
+    {
+      "config": "p4_a32",
+      "seed": 2026,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p4_a32_s2026.log"
+    },
+    {
+      "config": "p4_a32",
+      "negative": "withdraw_locked_request",
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p4_a32_bad_withdraw.log"
+    },
+    {
+      "config": "p3_a32",
+      "seed": 7,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p3_a32_s7.log"
+    },
+    {
+      "config": "p3_a32",
+      "seed": 41,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p3_a32_s41.log"
+    },
+    {
+      "config": "p3_a32",
+      "seed": 2026,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p3_a32_s2026.log"
+    },
+    {
+      "config": "p1_a32",
+      "seed": 7,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p1_a32_s7.log"
+    },
+    {
+      "config": "p1_a32",
+      "seed": 41,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p1_a32_s41.log"
+    },
+    {
+      "config": "p1_a32",
+      "seed": 2026,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p1_a32_s2026.log"
+    },
+    {
+      "config": "p4_a64",
+      "seed": 7,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p4_a64_s7.log"
+    },
+    {
+      "config": "p4_a64",
+      "seed": 41,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p4_a64_s41.log"
+    },
+    {
+      "config": "p4_a64",
+      "seed": 2026,
+      "passed": true,
+      "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/routing/p4_a64_s2026.log"
+    }
+  ]
+}

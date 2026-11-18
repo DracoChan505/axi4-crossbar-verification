@@ -1,0 +1,185 @@
+# AXI4 Memory-Mapped Crossbar
+
+当前状态：**五通道 AXI4 Crossbar（AW/W/B/AR/R）RTL 完整，读写通路已独立回归验证，联合并发场景已通过 UVM 系统验证，六种在途复位场景已完整覆盖。**
+
+## 验收总结（2026-11-17）
+
+| 验证类型 | 次数 | 结果 |
+|---------|------|------|
+| 读通路轻量 TB（4配置×3seed + BAD_SOURCE）| 13 | ✅ 13/13 |
+| 写通路轻量 TB（4配置×3seed + BAD_SOURCE）| 13 | ✅ 13/13 |
+| 写通路 DECERR 独立检查 | 4 | ✅ 4/4 |
+| 写通路 UVM 系统（32/64 位，含存储错误检测）| 7 | ✅ 7/7 |
+| Slave 独立 Monitor UVM（正常+协议违规+系统）| 19 | ✅ 19/19 |
+| 读通路 UVM 系统（32/64 位）| 6 | ✅ 6/6 |
+| 读写联合并发 UVM 系统（32/64 位）| 6 | ✅ 6/6 |
+| **在途复位 UVM 系统（6场景×3seed×2宽度）** | **36** | ✅ **36/36** |
+
+## 审查入口
+
+### 读通路 UVM 系统
+- [读通路 UVM5 测试与 scoreboard](dv/tests/crossbar_uvm5/crossbar_uvm5_pkg.sv)
+- [五通道顶层 TB](dv/tests/crossbar_uvm5/top5.sv)
+
+### 读通路轻量 TB
+- [读通路轻量 TB](dv/tests/crossbar_read/crossbar_read_tb.sv)
+
+### 写通路（原有）
+- [Slave 独立 Monitor、agent 与本轮验收](docs/slave-monitor-agent.md)
+- [UVM 系统接入与实际验收](docs/crossbar-uvm-integration.md)
+- [写 Crossbar 顶层、内部错误端与验收](docs/crossbar-write-spec.md)
+- [B 路由与 AW/W/B 联合验收](docs/bpath-spec.md)
+- [决策记录](docs/decisions.md)
+
+## 本机运行
+
+```sh
+# 读通路 UVM 系统回归
+make read-uvm-build
+make read-uvm-regress
+make read-uvm-build64
+make read-uvm-regress64
+
+# 读通路轻量回归
+make read-regress
+
+# 写通路 UVM 系统回归
+make system-build && make system-regress
+make system-build64 && make system-regress64
+make system-memory-fault
+
+# 写通路轻量回归
+make write-regress && make decerr-regress
+
+# Slave Monitor
+make monitor-build && make monitor-regress
+```
+
+## RTL 模块一览（15 个）
+
+| 模块 | 功能 |
+|------|------|
+| `axi_crossbar.sv` | **五通道完整顶层**（AW/W/B/AR/R）|
+| `axi_crossbar_write.sv` | 写通路顶层（4×4 + 内部 DECERR）|
+| `axi_crossbar_read.sv` | 读通路顶层（4×4 + 内部 DECERR）|
+| `axi_write_frontend.sv` | AW 准入/路由/仲裁/出口容量 |
+| `axi_read_frontend.sv` | AR 准入/路由/仲裁/出口容量 |
+| `axi_write_data_path.sv` | W 路由（双向队首匹配，逐拍转发）|
+| `axi_read_data_path.sv` | R 路由（S→M，lock-until-RLAST）|
+| `axi_write_response_path.sv` | B 响应路由（source 位路由回 Master）|
+| `axi_write_decerr.sv` | 内部写 DECERR 端点 |
+| `axi_read_decerr.sv` | 内部读 DECERR 端点 |
+| `axi_write_tracker.sv` | 每入口在途计数 + 同 ID 目标绑定 |
+| `axi_address_decode.sv` | 静态地址译码（4KB 对齐窗口）|
+| `axi_rr_arbiter.sv` | 轮询仲裁 |
+| `axi_record_fifo.sv` | 通用寄存式 FIFO |
+
+## 已知边界
+
+- UVM 系统在途复位场景未覆盖
+- 覆盖率收敛尚未完成（cross coverage 有工具限制）
+- 无综合/时序分析结果
+- FIXED/WRAP burst、exclusive access 等扩展功能未启用
+- 读写通路独立验证，五通道联合场景（同时读写）未测试
+
+当前状态：**五通道 AXI4 Crossbar（AW/W/B/AR/R）RTL 完整，读写通路均已独立回归验证。** UVM 系统集成、覆盖收敛和综合分析仍待完成。
+
+## 项目范围
+
+参数化、多 Master/Slave、AW/W/B/AR/R 五通道、独立读写路径、支持 multiple outstanding 与多 ID、具备响应路由和顺序保护的 AXI4 Memory-Mapped Crossbar。默认配置 4×4，地址/数据 32 位，Master 侧 ID 2 位，每入口最多 2 笔 outstanding。
+
+## 验收入口
+
+### 读通路
+- [读通路回归结果](docs/crossbar-read-results.json)
+- [读通路 RTL](rtl/axi_crossbar_read.sv)
+- [读数据路径 RTL](rtl/axi_read_data_path.sv)
+- [读前端 RTL](rtl/axi_read_frontend.sv)
+- [读 DECERR 端点 RTL](rtl/axi_read_decerr.sv)
+- [五通道顶层 RTL](rtl/axi_crossbar.sv)
+
+### 写通路
+- [Slave 独立 Monitor、agent 与本轮验收](docs/slave-monitor-agent.md)
+- [UVM 系统接入与实际验收](docs/crossbar-uvm-integration.md)
+- [系统 UVM 测试与独立检查](dv/tests/crossbar_uvm/crossbar_uvm_pkg.sv)
+- [写 Crossbar 顶层、内部错误端与验收](docs/crossbar-write-spec.md)
+- [写通路顶层 RTL](rtl/axi_crossbar_write.sv)
+- [B 路由与 AW/W/B 联合验收](docs/bpath-spec.md)
+- [W 两拍缓冲与 AW/W 联合验收](docs/wpath-spec.md)
+- [AW 控制路径连接：接口、时序与验收](docs/frontend-spec.md)
+- [Crossbar 地址译码与仲裁：接口、时序与验收](docs/routing-spec.md)
+- [Crossbar Write Tracker：接口、时序与验收](docs/tracker-spec.md)
+- [项目计划](docs/project-plan.md)与[决策记录](docs/decisions.md)
+
+## 本机运行
+
+```sh
+# 读通路回归（13 次）
+make read-regress
+
+# 写通路回归（13 次）
+make write-regress
+make decerr-regress
+
+# 写通路 UVM 系统回归（含存储错误检测）
+make system-build
+make system-regress
+make system-regress64
+make system-memory-fault
+
+# Slave 独立 Monitor
+make monitor-build
+make monitor-regress
+
+# 各子模块独立回归
+make tracker-regress
+make routing-regress
+make frontend-regress
+make wpath-regress
+make bpath-regress
+make master-regress
+make slave-regress
+```
+
+默认使用相邻 local-uvm 中的 Verilator 5.052 与 UVM 2020.3.2。
+
+## RTL 模块一览
+
+| 模块 | 功能 |
+|------|------|
+| `axi_crossbar.sv` | **五通道顶层**（AW/W/B/AR/R） |
+| `axi_crossbar_write.sv` | 写通路顶层（4×4+内部DECERR） |
+| `axi_crossbar_read.sv` | 读通路顶层（4×4+内部DECERR） |
+| `axi_write_frontend.sv` | AW 准入/路由/仲裁/出口容量 |
+| `axi_read_frontend.sv` | AR 准入/路由/仲裁/出口容量 |
+| `axi_write_data_path.sv` | W 路由（双向队首匹配，逐拍转发） |
+| `axi_read_data_path.sv` | R 路由（Slave→Master，lock-until-RLAST）|
+| `axi_write_response_path.sv` | B 响应路由（source 位路由回 Master）|
+| `axi_write_decerr.sv` | 内部写 DECERR 端点 |
+| `axi_read_decerr.sv` | 内部读 DECERR 端点 |
+| `axi_write_tracker.sv` | 每入口在途计数 + 同 ID 目标绑定 |
+| `axi_address_decode.sv` | 静态地址译码（4KB 对齐窗口）|
+| `axi_rr_arbiter.sv` | 轮询仲裁 |
+| `axi_record_fifo.sv` | 通用寄存式 FIFO |
+
+## 验收统计
+
+| 回归 | 通过 | 配置 |
+|------|------|------|
+| 读通路轻量回归 | 13/13 | 4配置×3seed + 1 BAD_SOURCE |
+| 写通路轻量回归 | 13/13 | 4配置×3seed + 1 BAD_SOURCE |
+| 写通路 DECERR 回归 | 4/4 | — |
+| 写通路 UVM 系统回归 | 6/6 正常 + 1 存储错误检测 | 32/64位 |
+| Slave Monitor 回归 | 19/19 | 5正常+7协议违规+6系统+1存储 |
+
+## 已知边界
+
+- AR/R 通道尚未接入现有 UVM Master/Slave agent（五通道 UVM 系统测试待做）
+- 覆盖率收敛尚未完成（cross coverage 有工具限制）
+- 无综合/时序分析结果
+- 运行中复位场景（UVM 系统级）仍待完成
+- FIXED/WRAP burst、exclusive access 等扩展功能未启用
+
+## 范围
+
+逐模块规格→确认→实现自检→用户审查，不主动缩减最终目标。最终五通道全量验证目标不变。计划功能不写成已实现能力。

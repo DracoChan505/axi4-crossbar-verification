@@ -1,0 +1,406 @@
+{
+  "date": "2026-11-14",
+  "total": 28,
+  "normal_passes": 22,
+  "expected_failures_detected": 6,
+  "configurations": [
+    {
+      "stage": "slave_single_transaction",
+      "source_sha256": "89238aef037c8d3a9d59b0d87ee547c41dd3b7ae08cbe38c0158d89525c828b4",
+      "data_width": 32,
+      "id_width": 4,
+      "seed": 7,
+      "uvm": "2020.3.2",
+      "results": [
+        {
+          "case": "smoke",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.41,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/smoke_s7.log"
+        },
+        {
+          "case": "w_first",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/w_first_s7.log"
+        },
+        {
+          "case": "unaligned",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/unaligned_s7.log"
+        },
+        {
+          "case": "sparse",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/sparse_s7.log"
+        },
+        {
+          "case": "max_burst",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/max_burst_s7.log"
+        },
+        {
+          "case": "delay",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/delay_s7.log"
+        },
+        {
+          "case": "b_stall",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/b_stall_s7.log"
+        },
+        {
+          "case": "reject",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reject_s7.log"
+        },
+        {
+          "case": "outside",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/outside_s7.log"
+        },
+        {
+          "case": "reset_partial",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/reset_partial_s7.log"
+        },
+        {
+          "case": "clear",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/clear_s7.log"
+        },
+        {
+          "case": "neg_wlast",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "expected_fatal": "SLAVE_WLAST",
+          "fatal_ids": [
+            "SLAVE_WLAST"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/neg_wlast_s7.log"
+        },
+        {
+          "case": "neg_strb",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "expected_fatal": "SLAVE_WSTRB",
+          "fatal_ids": [
+            "SLAVE_WSTRB"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/neg_strb_s7.log"
+        },
+        {
+          "case": "neg_boundary",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "expected_fatal": "SLAVE_BOUNDARY",
+          "fatal_ids": [
+            "SLAVE_BOUNDARY"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d32_i4/neg_boundary_s7.log"
+        }
+      ],
+      "verilator": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261026"
+    },
+    {
+      "stage": "slave_single_transaction",
+      "source_sha256": "89238aef037c8d3a9d59b0d87ee547c41dd3b7ae08cbe38c0158d89525c828b4",
+      "data_width": 64,
+      "id_width": 4,
+      "seed": 7,
+      "uvm": "2020.3.2",
+      "results": [
+        {
+          "case": "smoke",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.51,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/smoke_s7.log"
+        },
+        {
+          "case": "w_first",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/w_first_s7.log"
+        },
+        {
+          "case": "unaligned",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/unaligned_s7.log"
+        },
+        {
+          "case": "sparse",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/sparse_s7.log"
+        },
+        {
+          "case": "max_burst",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.02,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/max_burst_s7.log"
+        },
+        {
+          "case": "delay",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/delay_s7.log"
+        },
+        {
+          "case": "b_stall",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/b_stall_s7.log"
+        },
+        {
+          "case": "reject",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/reject_s7.log"
+        },
+        {
+          "case": "outside",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/outside_s7.log"
+        },
+        {
+          "case": "reset_partial",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/reset_partial_s7.log"
+        },
+        {
+          "case": "clear",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 0
+          },
+          "expected_fatal": null,
+          "fatal_ids": [],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/clear_s7.log"
+        },
+        {
+          "case": "neg_wlast",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "expected_fatal": "SLAVE_WLAST",
+          "fatal_ids": [
+            "SLAVE_WLAST"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/neg_wlast_s7.log"
+        },
+        {
+          "case": "neg_strb",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "expected_fatal": "SLAVE_WSTRB",
+          "fatal_ids": [
+            "SLAVE_WSTRB"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/neg_strb_s7.log"
+        },
+        {
+          "case": "neg_boundary",
+          "passed": true,
+          "exit": 0,
+          "seconds": 0.01,
+          "counts": {
+            "ERROR": 0,
+            "FATAL": 1
+          },
+          "expected_fatal": "SLAVE_BOUNDARY",
+          "fatal_ids": [
+            "SLAVE_BOUNDARY"
+          ],
+          "log": "/Users/shiyutian/Desktop/Projects/\u9a8c\u8bc1/axi4-crossbar/logs/slave_d64_i4/neg_boundary_s7.log"
+        }
+      ],
+      "verilator": "Verilator 5.052 2026-09-05 rev vUNKNOWN-built20261026"
+    }
+  ]
+}
