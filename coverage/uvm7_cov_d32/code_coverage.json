@@ -1,0 +1,98 @@
+{
+  "line_coverage": {
+    "hit": 446,
+    "total": 530,
+    "pct": 84.2
+  },
+  "toggle_coverage": {
+    "hit": 299,
+    "total": 299,
+    "pct": 100.0
+  },
+  "modules": {
+    "axi_address_decode.sv": {
+      "lh": 10,
+      "lt": 13,
+      "th": 10,
+      "tt": 10
+    },
+    "axi_crossbar.sv": {
+      "lh": 31,
+      "lt": 41,
+      "th": 37,
+      "tt": 37
+    },
+    "axi_crossbar_read.sv": {
+      "lh": 17,
+      "lt": 23,
+      "th": 31,
+      "tt": 31
+    },
+    "axi_crossbar_write.sv": {
+      "lh": 26,
+      "lt": 30,
+      "th": 41,
+      "tt": 41
+    },
+    "axi_read_data_path.sv": {
+      "lh": 38,
+      "lt": 40,
+      "th": 22,
+      "tt": 22
+    },
+    "axi_read_decerr.sv": {
+      "lh": 12,
+      "lt": 33,
+      "th": 9,
+      "tt": 9
+    },
+    "axi_read_frontend.sv": {
+      "lh": 55,
+      "lt": 56,
+      "th": 31,
+      "tt": 31
+    },
+    "axi_record_fifo.sv": {
+      "lh": 11,
+      "lt": 11,
+      "th": 30,
+      "tt": 30
+    },
+    "axi_rr_arbiter.sv": {
+      "lh": 35,
+      "lt": 41,
+      "th": 8,
+      "tt": 8
+    },
+    "axi_write_data_path.sv": {
+      "lh": 46,
+      "lt": 46,
+      "th": 17,
+      "tt": 17
+    },
+    "axi_write_decerr.sv": {
+      "lh": 13,
+      "lt": 35,
+      "th": 9,
+      "tt": 9
+    },
+    "axi_write_frontend.sv": {
+      "lh": 63,
+      "lt": 64,
+      "th": 36,
+      "tt": 36
+    },
+    "axi_write_response_path.sv": {
+      "lh": 31,
+      "lt": 33,
+      "th": 12,
+      "tt": 12
+    },
+    "axi_write_tracker.sv": {
+      "lh": 58,
+      "lt": 64,
+      "th": 6,
+      "tt": 6
+    }
+  }
+}

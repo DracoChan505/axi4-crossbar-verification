@@ -57,7 +57,7 @@ tar czf /tmp/cov_script_v2.tar.gz scripts/run_crossbar_xcelium_cov.py
 ```
 
 **预期结果**：
-- Line/Block 覆盖：85-95%（较高）
+- Line/Block 覆盖：84.0% / Toggle 100.0%（Verilator 实测）
 - Toggle 覆盖：70-80%（中等，toggle 通常较难）
 - Functional 覆盖：90%+（由于 covergroup 设计良好）
 
